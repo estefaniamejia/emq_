@@ -424,6 +424,25 @@ transition: opacity 250ms ease-in-out;
 .lazy-hidden {
   opacity: 0;
 }
+
+
+/*Prueba de CSS para video de background*/
+
+   .video-background.lazy-hidden {
+    opacity: 1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta el video para cubrir toda el área */
+            z-index: -1; /* Coloca el video detrás del contenido */
+
+        }
+
+
+
+
 .animated,
 .lazy-loaded {
   -webkit-animation-duration: 1s;
@@ -1098,7 +1117,7 @@ body:not(.ux-mobile) .header-bar-social {
 
 /* Text slider */
 .top-slider.top-slider-text {
-  position: relative; height: 400px; height: calc(100vh - 80px);
+  position: relative; height: 400px; height: calc(100vh - 80px); text-align: center;
 }
 .mask-clip-title .title-wrap-tit { 
   position: relative; font-weight: bolder; font-weight: 900;line-height: 1; background-attachment: fixed;background-size: cover;
@@ -1619,6 +1638,8 @@ body.page .title-wrap {
  -ms-transform: translateY(0);
  transform: translateY(0);   
 }
+
+
 
 /* 3.5 sidebar layout */
 
@@ -2946,7 +2967,7 @@ i.medium{ font-size:24px; }
 
 /* switching_word */
 .cd-words-wrapper b {
-  display: inline-block; position: absolute; white-space: nowrap; left: 0; top: 0; font-weight: normal;
+  display: inline-block; position: absolute; white-space: nowrap; left: 0; top: 0; font-weight: normal; color:#fff; text-align:center;
 }
 .cd-words-wrapper b.is-visible {
   position: relative;
@@ -3651,6 +3672,7 @@ body.ux-bordered,.bordered-top, .bordered-bottom
 { 
   color:#313139; 
 }
+
 .post_social:before, .post_social:after,.title-ux.line_under_over,.gallery-wrap-sidebar .entry, .social-share 
 { 
   border-color: #313139; 
@@ -3975,6 +3997,22 @@ button, input[type="submit"]
 { 
   font-size:14px; letter-spacing: 4px; padding: 5px 0; 
 }
+
+
+/*Prueba de estilo para créditos de fotos y videos*/
+.content-credits {
+  font-size: 7px;
+  position: absolute;
+            bottom: 20px; /* Distancia desde la parte inferior */
+            right: 20px; /* Distancia desde el lado izquierdo */
+            z-index: 1; /* Asegura que el texto esté sobre el video */
+            color: grey;
+}
+.color-especifico{
+  color:white;
+}
+
+
 
 /*----------------------------------------------- 
 
