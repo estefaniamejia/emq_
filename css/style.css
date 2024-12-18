@@ -1432,7 +1432,10 @@ body[class*="Safari"] .mask-clip-title .title-wrap-tit {
   transform: translate(0,-50%);
 }
 .grid-item-con-text-tit-shown {
-  position: relative; z-index: 7; padding: 20px; margin-bottom: 20px;
+  position: relative; z-index: 7; padding: 20px; margin-bottom: 20px; 
+}
+.grid-item-con-text-tit-shown-subtext {
+  position:relative;  margin-top: 20px; text-align: right;
 }
 .grid-list-tit-shown-center .grid-item-con-text-tit-shown {
   text-align: center;
